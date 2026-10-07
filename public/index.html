@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinkTwin MVP - Deep Link Shortener</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Deep Link Shortener</h1>
+    <p class="subtitle">
+      Paste a link. We'll generate a short link that opens directly in the
+      matching app (YouTube, Spotify, Instagram, Amazon, X, Facebook,
+      WhatsApp, Telegram, TikTok, LinkedIn) when possible.
+    </p>
+
+    <form id="create-form">
+      <input
+        id="url-input"
+        type="url"
+        placeholder="https://www.youtube.com/watch?v=..."
+        required
+      />
+      <button type="submit">Shorten</button>
+    </form>
+
+    <div id="result" class="result hidden">
+      <input id="result-input" type="text" readonly />
+      <button id="copy-btn" type="button">Copy</button>
+    </div>
+
+    <p id="error" class="error hidden"></p>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
